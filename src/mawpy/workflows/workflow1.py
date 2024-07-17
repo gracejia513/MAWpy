@@ -9,7 +9,9 @@ import os
 
 import argparse
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser() 
+# As of Jul 11, there is no parser for spatial and duration constraint, 
+# so the model can not run with arbitrary spatial and duration constraint.
 parser.add_argument("input_file", help="the CSV file to read the input from")
 parser.add_argument("output_file", help="the CSV file to write the output to.")
 parser.add_argument('--spatial_constraint', default=1, type=float, required=False)

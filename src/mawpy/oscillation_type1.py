@@ -36,7 +36,7 @@ def oscillation_h1_oscill(user, dur_constr):
     ):  # need to understand how this data is fed in the function
         user[d].sort(
             key=lambda x: int(x[0])
-        )  # sorting takes place based on x[0] which is the date time
+        )  # sorting takes place based on column x[0] which is the date time
         for trace in user[
             d
         ]:  # iterating through all rows for the dictionary key (need to confirm if it is user or datetime?)
